@@ -5,6 +5,35 @@
   text-align: center;
 }
 
+.site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
+.nav-link {
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #646cff;
+}
+
+.nav-link.active {
+  background-color: #646cff;
+  color: #ffffff;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -37,6 +66,57 @@
   padding: 2em;
 }
 
+.pricing-banner {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.pricing-banner h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.pricing-banner p {
+  margin: 0 0 1.5rem 0;
+  color: #888;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #646cff;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #535bf2;
+  color: #ffffff;
+}
+
 .read-the-docs {
   color: #888;
+}
+
+@media (prefers-color-scheme: light) {
+  .nav-link {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .pricing-banner {
+    border-color: #e2e8f0;
+    background: #f8fafc;
+  }
+  .pricing-banner p {
+    color: #64748b;
+  }
 }
